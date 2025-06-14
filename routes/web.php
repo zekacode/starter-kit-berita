@@ -38,7 +38,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Grup Rute Wartawan
     Route::middleware('role:Wartawan')->group(function () {
         Route::get('/wartawan-panel', fn() => '<h1>Panel Wartawan</h1>')->name('wartawan.panel');
-        // Nanti rute CRUD berita oleh wartawan ditaruh di sini
+        Route::resource('posts', App\Http\Controllers\PostController::class);
     });
 
 });

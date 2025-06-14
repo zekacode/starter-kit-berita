@@ -331,16 +331,8 @@ return [
             'role'   => 'Wartawan',
         ],
         [
-            'text' => 'Tulis Berita',
-            // 'route'  => 'news.create', // Nanti kita buat rute ini di Tahap 4
-            'url'    => '#', // URL sementara
-            'icon' => 'fas fa-fw fa-pen-nib',
-            'role' => 'Wartawan',
-        ],
-        [
             'text' => 'Berita Saya',
-            // 'route'  => 'news.my-news', // Nanti kita buat rute ini di Tahap 4
-            'url'    => '#', // URL sementara
+            'url'  => 'posts',
             'icon' => 'fas fa-fw fa-newspaper',
             'role' => 'Wartawan',
         ],
