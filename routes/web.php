@@ -3,39 +3,45 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+// Rute Publik (Tidak perlu login)
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// ===================================================================
+// SEMUA RUTE DI BAWAH INI MEMBUTUHKAN LOGIN
+// ===================================================================
+Route::middleware(['auth', 'verified'])->group(function () {
 
-Route::middleware('auth')->group(function () {
+    // Dashboard (untuk semua user yang login)
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    // Profil User (untuk semua user yang login)
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
 
-// Rute yang hanya bisa diakses oleh Admin
-Route::group(['middleware' => ['auth', 'role:Admin']], function () {
-    Route::get('/admin-panel', function () {
-        return '<h1>Selamat Datang di Panel Admin</h1>';
-    })->name('admin.panel');
-});
+    // Grup Rute Admin
+    Route::middleware('role:Admin')->group(function () {
+        Route::get('/admin-panel', fn() => '<h1>Panel Admin</h1>')->name('admin.panel');
+        Route::resource('categories', App\Http\Controllers\CategoryController::class);
+    });
 
-// Contoh untuk Editor
-Route::group(['middleware' => ['auth', 'role:Editor']], function () {
-    Route::get('/editor-panel', function () {
-        return '<h1>Selamat Datang di Panel Editor</h1>';
-    })->name('editor.panel');
-});
+    // Grup Rute Editor
+    Route::middleware('role:Editor')->group(function () {
+        Route::get('/editor-panel', fn() => '<h1>Panel Editor</h1>')->name('editor.panel');
+        // Nanti rute approval berita ditaruh di sini
+    });
 
-// Contoh untuk Wartawan
-Route::group(['middleware' => ['auth', 'role:Wartawan']], function () {
-    Route::get('/wartawan-panel', function () {
-        return '<h1>Selamat Datang di Panel Wartawan</h1>';
-    })->name('wartawan.panel');
+    // Grup Rute Wartawan
+    Route::middleware('role:Wartawan')->group(function () {
+        Route::get('/wartawan-panel', fn() => '<h1>Panel Wartawan</h1>')->name('wartawan.panel');
+        // Nanti rute CRUD berita oleh wartawan ditaruh di sini
+    });
+
 });
+// ===================================================================
 
 require __DIR__.'/auth.php';

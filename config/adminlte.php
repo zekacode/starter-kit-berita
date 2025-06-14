@@ -299,7 +299,7 @@ return [
     */
 
     'menu' => [
-        // Navbar items:
+        // Navbar items (opsional, bisa dibiarkan default)
         [
             'type' => 'navbar-search',
             'text' => 'search',
@@ -310,88 +310,73 @@ return [
             'topnav_right' => true,
         ],
 
-        // Sidebar items:
+        //================================================
+        // Sidebar items
+        //================================================
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
+
+        // -- MENU UNTUK SEMUA ROLE (ADMIN, EDITOR, WARTAWAN) --
         [
-            'text' => 'blog',
-            'url' => 'admin/blog',
-            'can' => 'manage-blog',
+            'text' => 'Dashboard',
+            'route'  => 'dashboard', // Menggunakan nama rute dari Breeze
+            'icon' => 'fas fa-fw fa-tachometer-alt',
+        ],
+
+        // -- MENU KHUSUS WARTAWAN --
+        [
+            'header' => 'MENU WARTAWAN',
+            'role'   => 'Wartawan',
         ],
         [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Tulis Berita',
+            // 'route'  => 'news.create', // Nanti kita buat rute ini di Tahap 4
+            'url'    => '#', // URL sementara
+            'icon' => 'fas fa-fw fa-pen-nib',
+            'role' => 'Wartawan',
         ],
         [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Berita Saya',
+            // 'route'  => 'news.my-news', // Nanti kita buat rute ini di Tahap 4
+            'url'    => '#', // URL sementara
+            'icon' => 'fas fa-fw fa-newspaper',
+            'role' => 'Wartawan',
+        ],
+
+        // -- MENU KHUSUS EDITOR --
+        [
+            'header' => 'MENU EDITOR',
+            'role'   => 'Editor',
         ],
         [
-            'text' => 'multilevel',
-            'icon' => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-            ],
+            'text'    => 'Approval Berita',
+            // 'route'   => 'news.approval', // Nanti kita buat rute ini di Tahap 5
+            'url'    => '#', // URL sementara
+            'icon'    => 'fas fa-fw fa-check-double',
+            'role'    => 'Editor',
         ],
-        ['header' => 'labels'],
+
+        // -- MENU KHUSUS ADMIN --
         [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
+            'header' => 'MENU ADMINISTRATOR',
+            'role'   => 'Admin',
         ],
         [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
+            'text' => 'Manajemen Kategori',
+            'route'  => 'categories.index', // Menggunakan nama rute dari Route::resource
+            'icon' => 'fas fa-fw fa-tags',
+            'role' => 'Admin',
         ],
         [
-            'text' => 'information',
-            'icon_color' => 'cyan',
-            'url' => '#',
+            'text'    => 'Manajemen User',
+            // 'route'   => 'users.index', // Ini bisa jadi fitur tambahan nanti
+            'url'     => '#', // URL sementara
+            'icon'    => 'fas fa-fw fa-users-cog',
+            'role'    => 'Admin',
         ],
+
     ],
 
     /*
