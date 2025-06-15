@@ -37,19 +37,19 @@ Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, 
 *(Catatan: Ganti `URL_SCREENSHOT_...` dengan path ke gambar tangkapan layar Anda setelah Anda mengunggahnya ke repository)*
 
 ### Halaman Login
-![Halaman Login]("./docs/Screenshot 2025-06-15 133821.png")
+![Halaman Login]("./docs/login.png")
 
 ### Dashboard Utama
-![Dashboard Utama]("docs/Screenshot 2025-06-15 133859.png")
+![Dashboard Utama]("./docs/dashboard.png")
 
 ### Manajemen Kategori (Admin)
-![Manajemen Kategori]("docs/Screenshot 2025-06-15 134014.png")
+![Manajemen Kategori]("./docs/admin.png")
 
 ### Manajemen Berita (Wartawan)
-![Manajemen Berita]("docs/Screenshot 2025-06-15 134233.png")
+![Manajemen Berita]("./docs/wartawan.png")
 
 ### Halaman Approval Berita (Editor)
-![Halaman Approval]("docs/Screenshot 2025-06-15 134457.png")
+![Halaman Approval]("./docs/editor.png")
 
 
 ## 🚀 Instalasi & Konfigurasi Lokal
