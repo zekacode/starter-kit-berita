@@ -288,6 +288,28 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Layout Files
+    |--------------------------------------------------------------------------
+    |
+    | Here we can modify the layout files of the admin panel.
+    |
+    | For detailed instructions you can look the layout section here:
+    | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
+    |
+    */
+
+    'files' => [
+        'css' => [
+            [
+                'type' => 'css',
+                'asset' => true,
+                'location' => 'vendor/adminlte/dist/css/custom.css',
+            ],
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Menu Items
     |--------------------------------------------------------------------------
     |

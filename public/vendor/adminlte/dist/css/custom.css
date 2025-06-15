@@ -1,0 +1,134 @@
+/* public/vendor/adminlte/dist/css/custom.css */
+
+/*
+ * ==========================================================================
+ *   1. DEFINISI FONT & PALET WARNA
+ * ==========================================================================
+ */
+
+:root {
+    /* Fonts */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Lora', serif;
+
+    /* Color Palette */
+    --color-bg: #EDEAE0;
+    --color-primary: #3B6991;
+    --color-secondary: #1A365D;
+    --color-accent: #A55C44;
+    --color-text: #333;
+    --color-light-gray: #f8f9fa; /* Warna abu-abu terang bawaan bootstrap */
+}
+
+/*
+ * ==========================================================================
+ *   2. IMPLEMENTASI FONT
+ * ==========================================================================
+ */
+
+/* Terapkan font utama ke seluruh body */
+body, .main-sidebar, .main-header, .btn, .form-control, .card-header, .card-footer {
+    font-family: var(--font-primary);
+}
+
+/* Terapkan font sekunder (Lora) untuk judul-judul utama */
+h1, h2, h3, h4, h5, h6, .content-header h1, .brand-text {
+    font-family: var(--font-secondary);
+    font-weight: 700; /* Gunakan versi bold */
+}
+
+/*
+ * ==========================================================================
+ *   3. IMPLEMENTASI WARNA (THEMING ADMINLTE)
+ * ==========================================================================
+ */
+
+/* -- WARNA DASAR -- */
+.wrapper, .content-wrapper {
+    background-color: var(--color-bg) !important;
+}
+
+/* -- NAVBAR (HEADER ATAS) -- */
+.main-header {
+    background-color: var(--color-secondary) !important;
+    border-bottom: none !important;
+}
+.main-header .nav-link {
+    color: #ffffff !important;
+}
+.main-header .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+/* -- SIDEBAR UTAMA -- */
+.main-sidebar {
+    background-color: var(--color-secondary);
+}
+
+/* Logo di sidebar */
+.brand-link {
+    background-color: var(--color-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.brand-link .brand-text {
+    color: #ffffff !important;
+}
+
+/* Teks menu di sidebar */
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Menu Aktif di sidebar */
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link:hover {
+    background-color: var(--color-primary) !important;
+    color: #ffffff !important;
+}
+
+/* -- TOMBOL (BUTTONS) -- */
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+.btn-primary:hover {
+    background-color: #2c5375; /* Versi lebih gelap dari primary */
+    border-color: #2c5375;
+}
+
+.btn-success {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+.btn-success:hover {
+    background-color: #8b4e3a; /* Versi lebih gelap dari accent */
+    border-color: #8b4e3a;
+}
+
+/* -- LINK & BADGE -- */
+a {
+    color: var(--color-primary);
+}
+a:hover {
+    color: #2c5375;
+}
+.badge-success {
+    background-color: var(--color-accent) !important;
+}
+
+
+/* -- CARD (KONTEN UTAMA) -- */
+.card {
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24); /* Beri sedikit shadow agar terangkat dari background */
+}
+.card-header {
+    background-color: var(--color-light-gray);
+    border-bottom: 1px solid #e3e6f0;
+}
+
+/* Header Halaman (di atas Card) */
+.content-header h1 {
+    color: var(--color-secondary);
+}
