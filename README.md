@@ -37,19 +37,19 @@ Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, 
 *(Catatan: Ganti `URL_SCREENSHOT_...` dengan path ke gambar tangkapan layar Anda setelah Anda mengunggahnya ke repository)*
 
 ### Halaman Login
-![Halaman Login]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 133821.png")
+![Halaman Login]("./docs/Screenshot 2025-06-15 133821.png")
 
 ### Dashboard Utama
-![Dashboard Utama]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 133859.png")
+![Dashboard Utama]("docs/Screenshot 2025-06-15 133859.png")
 
 ### Manajemen Kategori (Admin)
-![Manajemen Kategori]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 134014.png")
+![Manajemen Kategori]("docs/Screenshot 2025-06-15 134014.png")
 
 ### Manajemen Berita (Wartawan)
-![Manajemen Berita]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 134233.png")
+![Manajemen Berita]("docs/Screenshot 2025-06-15 134233.png")
 
 ### Halaman Approval Berita (Editor)
-![Halaman Approval]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 134457.png")
+![Halaman Approval]("docs/Screenshot 2025-06-15 134457.png")
 
 
 ## 🚀 Instalasi & Konfigurasi Lokal
