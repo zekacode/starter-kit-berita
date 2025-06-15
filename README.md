@@ -26,7 +26,7 @@ Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, 
 
 ## 🛠️ Teknologi yang Digunakan
 
--   **Backend:** PHP 8.2+, Laravel 11
+-   **Backend:** PHP 8.2+, Laravel 12
 -   **Frontend:** AdminLTE 3, Blade Template Engine, Bootstrap 4
 -   **Database:** MySQL / MariaDB
 -   **Otentikasi & Role:** Laravel Breeze, Spatie/laravel-permission
@@ -37,19 +37,19 @@ Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, 
 *(Catatan: Ganti `URL_SCREENSHOT_...` dengan path ke gambar tangkapan layar Anda setelah Anda mengunggahnya ke repository)*
 
 ### Halaman Login
-![Halaman Login](URL_SCREENSHOT_LOGIN.png)
+![Halaman Login]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 133821.png")
 
 ### Dashboard Utama
-![Dashboard Utama](URL_SCREENSHOT_DASHBOARD.png)
+![Dashboard Utama]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 133859.png")
 
 ### Manajemen Kategori (Admin)
-![Manajemen Kategori](URL_SCREENSHOT_KATEGORI.png)
+![Manajemen Kategori]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 134014.png")
 
 ### Manajemen Berita (Wartawan)
-![Manajemen Berita](URL_SCREENSHOT_BERITA_WARTAWAN.png)
+![Manajemen Berita]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 134233.png")
 
 ### Halaman Approval Berita (Editor)
-![Halaman Approval](URL_SCREENSHOT_APPROVAL_EDITOR.png)
+![Halaman Approval]("C:\laragon\www\starter-kit-berita\docs\Screenshot 2025-06-15 134457.png")
 
 
 ## 🚀 Instalasi & Konfigurasi Lokal
