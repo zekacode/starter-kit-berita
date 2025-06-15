@@ -35,10 +35,10 @@ Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, 
 ## 📸 Tangkapan Layar (Demo Aplikasi)
 
 ### Halaman Login
-![Halaman Login]("docs/login.png")
+![Halaman Login](docs/login.png)
 
 ### Dashboard Utama
-![Dashboard Utama]("./docs/dashboard.png")
+![Dashboard Utama](./docs/dashboard.png)
 
 ### Manajemen Kategori (Admin)
 ![Manajemen Kategori]("./docs/admin.png")
