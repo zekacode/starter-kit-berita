@@ -35,19 +35,19 @@ Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, 
 ## 📸 Tangkapan Layar (Demo Aplikasi)
 
 ### Halaman Login
-![Halaman Login](docs/login.png)
+![Halaman Login](./docs/login.png)
 
 ### Dashboard Utama
 ![Dashboard Utama](./docs/dashboard.png)
 
 ### Manajemen Kategori (Admin)
-![Manajemen Kategori]("./docs/admin.png")
+![Manajemen Kategori](./docs/admin.png)
 
 ### Manajemen Berita (Wartawan)
-![Manajemen Berita]("./docs/wartawan.png")
+![Manajemen Berita](./docs/wartawan.png)
 
 ### Halaman Approval Berita (Editor)
-![Halaman Approval]("./docs/editor.png")
+![Halaman Approval](./docs/editor.png)
 
 
 ## 🚀 Instalasi & Konfigurasi Lokal
