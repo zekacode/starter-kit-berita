@@ -34,10 +34,8 @@ Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, 
 
 ## 📸 Tangkapan Layar (Demo Aplikasi)
 
-*(Catatan: Ganti `URL_SCREENSHOT_...` dengan path ke gambar tangkapan layar Anda setelah Anda mengunggahnya ke repository)*
-
 ### Halaman Login
-![Halaman Login]("./docs/login.png")
+![Halaman Login]("docs/login.png")
 
 ### Dashboard Utama
 ![Dashboard Utama]("./docs/dashboard.png")
