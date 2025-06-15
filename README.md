@@ -1,61 +1,209 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Laravel News Portal - Starter Kit
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Proyek ini adalah sebuah Starter Kit atau Boilerplate yang dibangun menggunakan Laravel 11 dan AdminLTE 3. Tujuannya adalah untuk menyediakan fondasi yang kokoh dan siap pakai untuk membangun aplikasi web berbasis portal berita, blog, atau sistem manajemen konten (CMS) lainnya.
 
-## About Laravel
+Starter kit ini sudah dilengkapi dengan sistem otentikasi, manajemen role user, alur kerja pembuatan konten dari wartawan hingga persetujuan editor, serta tema kustom yang elegan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+✨ Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+✅ Otentikasi Lengkap: Sistem Sign In, Register, Lupa Password, Reset Password, dan Edit Profil pengguna sudah siap pakai (disediakan oleh Laravel Breeze).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+✅ Manajemen Role & Permission: Terdapat 3 level akses pengguna yang sudah dikonfigurasi menggunakan spatie/laravel-permission:
 
-## Learning Laravel
+Admin: Memiliki akses penuh, termasuk mengelola kategori.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Editor: Bertugas mereview dan mempublikasikan berita.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Wartawan: Bertugas menulis dan mengirimkan berita.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+✅ CRUD Kategori: Admin dapat mengelola kategori berita (Tambah, Edit, Hapus).
 
-## Laravel Sponsors
+✅ CRUD Berita (oleh Wartawan):
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Form untuk menulis berita dengan Judul, Konten, dan pilihan Kategori.
 
-### Premium Partners
+Fitur unggah gambar unggulan (feature image).
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Pengirim berita otomatis tercatat sesuai user yang login.
 
-## Contributing
+Berita yang baru dibuat otomatis berstatus draft.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+✅ Alur Kerja Approval (oleh Editor):
 
-## Code of Conduct
+Halaman khusus untuk Editor melihat daftar berita yang berstatus draft.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Editor dapat menyetujui (mengubah status menjadi published) atau menolak (mengubah status menjadi rejected) berita.
 
-## Security Vulnerabilities
+✅ Tema Kustom: Tampilan AdminLTE sudah dimodifikasi dengan:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Palet Warna: Kombinasi Off-White, Dark Blue, Medium Blue, dan Terracotta Brown.
 
-## License
+Tipografi: Menggunakan font Lora untuk judul dan Montserrat untuk teks UI.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+🛠️ Teknologi yang Digunakan
+
+Backend: PHP 8.2+, Laravel 11
+
+Frontend: AdminLTE 3, Blade Template Engine, Bootstrap 4
+
+Database: MySQL / MariaDB
+
+Otentikasi & Role: Laravel Breeze, Spatie/laravel-permission
+
+Tools: Composer, NPM, Vite
+
+📸 Tangkapan Layar (Demo Aplikasi)
+
+(Catatan: Ganti URL_SCREENSHOT_... dengan path ke gambar tangkapan layar Anda setelah Anda mengunggahnya ke repository)
+
+Halaman Login
+
+![alt text](URL_SCREENSHOT_LOGIN.png)
+
+Dashboard Utama
+
+![alt text](URL_SCREENSHOT_DASHBOARD.png)
+
+Manajemen Kategori (Admin)
+
+![alt text](URL_SCREENSHOT_KATEGORI.png)
+
+Manajemen Berita (Wartawan)
+
+![alt text](URL_SCREENSHOT_BERITA_WARTAWAN.png)
+
+Halaman Approval Berita (Editor)
+
+![alt text](URL_SCREENSHOT_APPROVAL_EDITOR.png)
+
+🚀 Instalasi & Konfigurasi Lokal
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal Anda.
+
+Clone Repository
+
+git clone https://github.com/username/nama-repository.git
+cd nama-repository
+
+
+Install Dependensi
+Pastikan Anda memiliki Composer dan NPM terinstall.
+
+composer install
+npm install
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Konfigurasi Environment
+Salin file .env.example menjadi .env.
+
+cp .env.example .env
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Buat database baru (misal: starter_kit_berita) lalu sesuaikan konfigurasi database di file .env Anda.
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=starter_kit_berita
+DB_USERNAME=root
+DB_PASSWORD=
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Env
+IGNORE_WHEN_COPYING_END
+
+Generate Application Key
+
+php artisan key:generate
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Jalankan Migrasi & Seeder
+Perintah ini akan membuat semua tabel database dan mengisi tabel roles (Admin, Editor, Wartawan).
+
+php artisan migrate --seed
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Buat Storage Link
+Perintah ini penting agar gambar yang diunggah dapat diakses dari web.
+
+php artisan storage:link
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Kompilasi Aset Frontend
+
+npm run dev
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Jalankan Server Development
+
+php artisan serve
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Aplikasi sekarang dapat diakses di http://127.0.0.1:8000.
+
+🧑‍💻 Setup User Roles Awal
+
+Setelah registrasi user baru, Anda perlu memberikan role secara manual melalui terminal menggunakan command yang telah kita buat.
+
+Daftarkan 3 user baru melalui halaman register aplikasi.
+
+Gunakan command berikut di terminal untuk memberikan role:
+
+# Memberikan role Admin
+php artisan user:assign-role email.admin@example.com Admin
+
+# Memberikan role Editor
+php artisan user:assign-role email.editor@example.com Editor
+
+# Memberikan role Wartawan
+php artisan user:assign-role email.wartawan@example.com Wartawan
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+👨‍🎓 Author
+
+Nama: Putrawin Adha Muzakki
+
+NIM: 23091397181
+
+Kelas: 2023F
