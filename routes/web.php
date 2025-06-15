@@ -32,7 +32,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Grup Rute Editor
     Route::middleware('role:Editor')->group(function () {
         Route::get('/editor-panel', fn() => '<h1>Panel Editor</h1>')->name('editor.panel');
-        // Nanti rute approval berita ditaruh di sini
+        // Rute untuk menampilkan daftar berita yang perlu di-review
+        Route::get('approval', [App\Http\Controllers\ApprovalController::class, 'index'])->name('approval.index');
+
+        // Rute untuk mengubah status berita (approve/reject)
+        Route::patch('approval/{post}/approve', [App\Http\Controllers\ApprovalController::class, 'approve'])->name('approval.approve');
+        Route::patch('approval/{post}/reject', [App\Http\Controllers\ApprovalController::class, 'reject'])->name('approval.reject');
     });
 
     // Grup Rute Wartawan

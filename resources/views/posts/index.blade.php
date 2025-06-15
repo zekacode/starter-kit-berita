@@ -25,7 +25,12 @@
                             <td>{{ $post->title }}</td>
                             <td>{{ $post->category->name ?? 'N/A' }}</td>
                             <td>
-                                <span class="badge {{ $post->status == 'published' ? 'badge-success' : 'badge-secondary' }}">
+                                @php
+                                    $statusClass = 'secondary'; // Default
+                                    if ($post->status == 'published') $statusClass = 'success';
+                                    if ($post->status == 'rejected') $statusClass = 'danger';
+                                @endphp
+                                <span class="badge badge-{{ $statusClass }}">
                                     {{ ucfirst($post->status) }}
                                 </span>
                             </td>

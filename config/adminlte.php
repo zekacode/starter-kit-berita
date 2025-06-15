@@ -339,15 +339,15 @@ return [
 
         // -- MENU KHUSUS EDITOR --
         [
-            'header' => 'MENU EDITOR',
-            'role'   => 'Editor',
+        'header' => 'REVIEW KONTEN',
+        'role'  => 'Editor',
         ],
         [
-            'text'    => 'Approval Berita',
-            // 'route'   => 'news.approval', // Nanti kita buat rute ini di Tahap 5
-            'url'    => '#', // URL sementara
+            'text'    => 'Persetujuan Berita',
+            'url'     => 'approval',
             'icon'    => 'fas fa-fw fa-check-double',
             'role'    => 'Editor',
+            'label_color' => 'success', 
         ],
 
         // -- MENU KHUSUS ADMIN --
